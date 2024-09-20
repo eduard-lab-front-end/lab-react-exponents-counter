@@ -6,6 +6,7 @@ import ExponentFour from "./components/ExponentFour";
 import ExponentFive from "./components/ExponentFive";
 import ExponentSix from "./components/ExponentSix";
 import { useState } from "react";
+import Exponent from "./components/Exponent";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         <ExponentFour count={count} />
         <ExponentFive count={count} />
         <ExponentSix count={count} />
+        <Exponent num={count} exponent={count}/>
       </div>
     </div>
   );
